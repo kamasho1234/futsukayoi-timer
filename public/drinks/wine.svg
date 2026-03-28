@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#200a15"/><stop offset="100%" stop-color="#140810"/></linearGradient>
+    <linearGradient id="wine" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8b1a3a"/><stop offset="100%" stop-color="#5c0e25"/></linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="16" fill="url(#bg)"/>
+  <!-- Stem -->
+  <rect x="57" y="75" width="6" height="16" rx="1" fill="rgba(255,255,255,0.08)"/>
+  <!-- Base -->
+  <ellipse cx="60" cy="95" rx="16" ry="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <!-- Bowl -->
+  <path d="M38 35 Q38 70 48 75 L58 75 L62 75 L72 75 Q82 70 82 35 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <!-- Wine liquid -->
+  <path d="M41 50 Q41 68 49 73 L58 73 L62 73 L71 73 Q79 68 79 50 Z" fill="url(#wine)" opacity="0.85"/>
+  <!-- Highlight -->
+  <path d="M45 55 Q45 65 50 70" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

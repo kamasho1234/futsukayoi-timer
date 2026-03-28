@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1508"/><stop offset="100%" stop-color="#100d05"/></linearGradient>
+    <linearGradient id="um" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c88030"/><stop offset="100%" stop-color="#8a5520"/></linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="16" fill="url(#bg)"/>
+  <!-- Rocks glass -->
+  <path d="M35 40 L40 95 Q40 100 45 100 L75 100 Q80 100 80 95 L85 40 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <!-- Umeshu liquid (amber) -->
+  <path d="M42 55 L44 93 Q44 97 48 97 L72 97 Q76 97 76 93 L78 55 Z" fill="url(#um)" opacity="0.5"/>
+  <!-- Ice -->
+  <rect x="48" y="48" width="12" height="10" rx="2" fill="rgba(255,255,255,0.15)" transform="rotate(-5 54 53)"/>
+  <rect x="62" y="50" width="10" height="9" rx="2" fill="rgba(255,255,255,0.1)" transform="rotate(6 67 54)"/>
+  <!-- Ume (plum) at bottom -->
+  <circle cx="55" cy="88" r="5" fill="#8a4020" opacity="0.5"/>
+  <circle cx="66" cy="86" r="4" fill="#7a3818" opacity="0.4"/>
+</svg>

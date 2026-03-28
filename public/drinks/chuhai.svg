@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0a1a20"/><stop offset="100%" stop-color="#081014"/></linearGradient>
+    <linearGradient id="ch" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7ec8e3"/><stop offset="100%" stop-color="#4a9ab5"/></linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="16" fill="url(#bg)"/>
+  <!-- Can body -->
+  <rect x="35" y="20" width="50" height="80" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <!-- Can top -->
+  <rect x="38" y="20" width="44" height="8" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <!-- Tab -->
+  <ellipse cx="60" cy="24" rx="6" ry="2.5" fill="rgba(255,255,255,0.15)"/>
+  <!-- Label area -->
+  <rect x="38" y="38" width="44" height="50" rx="2" fill="url(#ch)" opacity="0.3"/>
+  <!-- Fruit decoration (lemon) -->
+  <circle cx="60" cy="58" r="12" fill="#e8c44a" opacity="0.5"/>
+  <circle cx="60" cy="58" r="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.5"/>
+  <!-- Drops on can -->
+  <ellipse cx="42" cy="70" rx="1.5" ry="2" fill="rgba(255,255,255,0.12)"/>
+  <ellipse cx="75" cy="55" rx="1" ry="1.8" fill="rgba(255,255,255,0.1)"/>
+  <ellipse cx="46" cy="82" rx="1.2" ry="1.5" fill="rgba(255,255,255,0.08)"/>
+</svg>

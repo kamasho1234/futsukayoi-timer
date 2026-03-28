@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#161218"/><stop offset="100%" stop-color="#0c0a10"/></linearGradient>
+    <linearGradient id="liq" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#8a6c20"/></linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="16" fill="url(#bg)"/>
+  <!-- Martini glass -->
+  <rect x="57" y="75" width="6" height="18" rx="1" fill="rgba(255,255,255,0.07)"/>
+  <ellipse cx="60" cy="96" rx="15" ry="3.5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+  <path d="M30 28 L60 75 L62 75 L92 28 Z" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="0.8"/>
+  <!-- Liquid -->
+  <path d="M40 42 L60 72 L62 72 L82 42 Z" fill="url(#liq)" opacity="0.45"/>
+  <!-- Olive on pick -->
+  <line x1="50" y1="22" x2="72" y2="44" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <circle cx="50" cy="22" r="5" fill="#6a8a30" opacity="0.6"/>
+  <circle cx="50" cy="22" r="2" fill="#8a3020" opacity="0.4"/>
+  <!-- Sparkle -->
+  <circle cx="78" cy="32" r="1" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="42" cy="38" r="0.8" fill="rgba(255,255,255,0.15)"/>
+</svg>

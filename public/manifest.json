@@ -1,0 +1,21 @@
+{
+  "name": "二日酔い回復タイマー",
+  "short_name": "二日酔い回復タイマー",
+  "description": "飲酒量からアルコール分解時間を自動計算。二日酔いの回復をリアルタイムでサポートする無料Webアプリ。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0f14",
+  "theme_color": "#0c0f14",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "ja",
+  "categories": ["health", "lifestyle", "utilities"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
