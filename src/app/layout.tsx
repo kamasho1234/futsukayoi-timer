@@ -8,6 +8,9 @@ const SITE_DESCRIPTION =
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  verification: {
+    google: "h8fI7j56oR6k-q82Rengy4Jm4JluczNjehErTz06V8A",
+  },
   title: {
     default: "二日酔い回復タイマー - アルコール分解時間を自動計算",
     template: "%s | 二日酔い回復タイマー",
