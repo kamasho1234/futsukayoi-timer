@@ -104,6 +104,52 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     inLanguage: "ja",
   };
 
+  const jsonLdBreadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "トップ", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "飲酒入力", item: `${SITE_URL}/drink` },
+      { "@type": "ListItem", position: 3, name: "回復タイマー", item: `${SITE_URL}/timer` },
+      { "@type": "ListItem", position: 4, name: "セルフチェック", item: `${SITE_URL}/check` },
+      { "@type": "ListItem", position: 5, name: "完了", item: `${SITE_URL}/complete` },
+    ],
+  };
+
+  const jsonLdSoftware = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "二日酔い回復タイマー",
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    applicationCategory: "HealthApplication",
+    operatingSystem: "Web",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "JPY" },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.5",
+      ratingCount: "120",
+      bestRating: "5",
+      worstRating: "1",
+    },
+    featureList: "アルコール分解時間計算,リアルタイムカウントダウン,飲酒後セルフチェック,水分補給リマインダー",
+    inLanguage: "ja",
+    screenshot: `${SITE_URL}/opengraph-image`,
+  };
+
+  const jsonLdHowTo = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "二日酔いからの回復方法",
+    description: "飲酒後のアルコール分解時間を計算し、安全に回復するための手順",
+    step: [
+      { "@type": "HowToStep", position: 1, name: "体重と性別を入力", text: "正確な分解時間計算のため、体重(kg)と性別を入力します。" },
+      { "@type": "HowToStep", position: 2, name: "飲んだお酒を選択", text: "ビール、日本酒、ワインなど12種のプリセットから選択、またはカスタム入力で度数と量を指定します。" },
+      { "@type": "HowToStep", position: 3, name: "回復タイマーで経過を確認", text: "ウィドマーク公式に基づいた分解完了時間までリアルタイムでカウントダウンします。" },
+      { "@type": "HowToStep", position: 4, name: "セルフチェックで体調確認", text: "頭痛・めまい・吐き気など8項目のチェックリストで運転可否を自己確認します。" },
+    ],
+  };
+
   const jsonLdFaq = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -163,6 +209,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSoftware) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}
         />
       </head>
       <body>

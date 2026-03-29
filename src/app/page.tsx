@@ -153,6 +153,62 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Alcohol breakdown reference table for SEO */}
+      <section aria-label="アルコール分解時間の目安">
+        <h2 className="text-xs font-bold text-[var(--text-muted)] mb-3 tracking-wide">お酒別の分解時間（体重65kgの場合）</h2>
+        <div className="card overflow-hidden p-0">
+          <table className="w-full text-[10px]">
+            <thead>
+              <tr className="border-b border-[rgba(255,255,255,0.06)]">
+                <th className="text-left py-2 px-3 text-[var(--text-dim)] font-medium">お酒</th>
+                <th className="text-right py-2 px-3 text-[var(--text-dim)] font-medium">アルコール</th>
+                <th className="text-right py-2 px-3 text-[var(--text-dim)] font-medium">分解目安</th>
+              </tr>
+            </thead>
+            <tbody className="text-[var(--text-muted)]">
+              {[
+                ["ビール 350ml", "14g", "約2.2時間"],
+                ["ビール 500ml", "20g", "約3.1時間"],
+                ["日本酒 1合", "21.6g", "約3.3時間"],
+                ["ワイン グラス1杯", "12g", "約1.8時間"],
+                ["ハイボール 1杯", "19.6g", "約3.0時間"],
+                ["ストロング系 350ml", "25.2g", "約3.9時間"],
+                ["焼酎ロック 1合", "36g", "約5.5時間"],
+              ].map(([name, alc, time]) => (
+                <tr key={name} className="border-b border-[rgba(255,255,255,0.03)]">
+                  <td className="py-1.5 px-3">{name}</td>
+                  <td className="py-1.5 px-3 text-right font-mono">{alc}</td>
+                  <td className="py-1.5 px-3 text-right font-mono text-[var(--accent)]">{time}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-[9px] text-[var(--text-dim)] mt-1.5">※ 体重1kgあたり0.1g/時の分解速度で計算。個人差があります。</p>
+      </section>
+
+      {/* FAQ Section (visible, matches JSON-LD) */}
+      <section aria-label="よくある質問">
+        <h2 className="text-xs font-bold text-[var(--text-muted)] mb-3 tracking-wide">よくある質問</h2>
+        <div className="flex flex-col gap-2">
+          {[
+            { q: "アルコールの分解時間はどのくらい？", a: "体重60kgの男性の場合、ビール1杯（350ml）で約2〜3時間。体重・性別・飲酒量で個人差があります。" },
+            { q: "二日酔いを早く治すには？", a: "水分補給が最重要。スポーツドリンクや経口補水液で電解質を補給し、十分な休息を取りましょう。" },
+            { q: "飲酒後いつから運転できる？", a: "アルコールが完全に分解されるまで運転は控えてください。少しでも不安なら運転しないのが鉄則です。" },
+            { q: "計算結果は正確？", a: "ウィドマーク公式に基づく一般的な目安です。体調や食事の有無でも変わるため、参考値としてご利用ください。" },
+            { q: "二日酔いに効く食べ物は？", a: "しじみの味噌汁、梅干し、バナナ、はちみつ、大根おろしなどが効果的です。" },
+          ].map(({ q, a }) => (
+            <details key={q} className="card group">
+              <summary className="text-xs font-medium cursor-pointer flex items-center justify-between">
+                <span>{q}</span>
+                <span className="text-[var(--text-dim)] group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="text-[10px] text-[var(--text-dim)] mt-2 leading-relaxed">{a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
       {/* SNS Share */}
       <div>
         <div className="text-xs text-[var(--text-muted)] font-semibold mb-3 text-center">友達にシェア</div>

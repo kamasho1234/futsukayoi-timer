@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     title: "飲酒内容の入力 | 二日酔い回復タイマー",
     description: "飲んだお酒の種類と量を入力して、アルコール分解時間を計算しましょう。",
     url: "/drink",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   alternates: {
     canonical: "/drink",

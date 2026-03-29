@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     title: "回復タイマー | 二日酔い回復タイマー",
     description: "アルコール分解完了までリアルタイムでカウントダウン。回復をサポートします。",
     url: "/timer",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   alternates: {
     canonical: "/timer",

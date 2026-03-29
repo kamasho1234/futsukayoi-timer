@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     title: "飲酒後セルフチェック | 二日酔い回復タイマー",
     description: "8項目のチェックリストで飲酒後の体調を確認。安全な行動判断をサポートします。",
     url: "/check",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   alternates: {
     canonical: "/check",
